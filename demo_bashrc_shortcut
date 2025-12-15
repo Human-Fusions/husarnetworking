@@ -1,12 +1,15 @@
 #! /bin/bash
+############ Copy the script below and paste it at the bottom of your bashrc for a selection of useful shortcuts! ##############
+#ROS2 shortcuts
 alias ROS2='. ~/ros2_humble/install/setup.bash
 echo "ROS2 is go!"'
 alias talker='ros2 run demo_nodes_cpp talker'
 alias listener='ros2 run demo_nodes_cpp listener'
-#Husarnet
+#Husarnet shortcuts
 alias husar='export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
 export FASTRTPS_DEFAULT_PROFILES_FILE=/var/tmp/husarnet-fastdds-simple.xml
 echo "Husarnet hurdles jumped!"'
+#Full demo prep shortcut
 alias demotime='ROS2
 husar
 husarnet status
