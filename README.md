@@ -2,7 +2,7 @@
 some customized instructions for connecting to our husarnet network
 
 ## can't connect?
-### try...
+### The first time, try...
 ```
 RELEASE="v1.3.6"
 ARCH="amd64"
@@ -28,13 +28,19 @@ husarnet-dds singleshot
 ### The results I have had
 are that after I run these commands I can connect to the talker/listener test script
 **however** I still can't see the topic names
-**and** I have to run these again every time I open a new terminal
+
+### After the first time, just run
+```
+export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+export FASTRTPS_DEFAULT_PROFILES_FILE=/var/tmp/husarnet-fastdds-simple.xml
+```
+*I'm going to write a little bash script to take care of this so I don't have to do it every time*
 
 
 ## Can't log in?
 If you're getting 
 ```
-Error: Authentication error occured
+ERROR: Authentication error occured
 ERROR: Invalid character '<' looking for beginning of value
 ```
 Try logging in to the dashboard and find the join code- it should look like this:
