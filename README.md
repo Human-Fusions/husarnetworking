@@ -36,6 +36,11 @@ export FASTRTPS_DEFAULT_PROFILES_FILE=/var/tmp/husarnet-fastdds-simple.xml
 ```
 *I'm going to write a little bash script to take care of this so I don't have to do it every time*
 
+## Still can't see the topic names?
+After I logged out and in a few times I was able to see the topic names. Don't know what changed, will update if I work it out.
+Notably I logged on as root user and ran the sequence, so it's possible that running it as root changed it somehow?
+After doing it as root once I do not have to be root user to make it work for subsequent connections.
+
 
 ## Can't log in?
 If you're getting 
