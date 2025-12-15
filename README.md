@@ -29,3 +29,16 @@ husarnet-dds singleshot
 are that after I run these commands I can connect to the talker/listener test script
 **however** I still can't see the topic names
 **and** I have to run these again every time I open a new terminal
+
+
+## Can't log in?
+If you're getting 
+```
+Error: Authentication error occured
+ERROR: Invalid character '<' looking for beginning of value
+```
+Try logging in to the dashboard and find the join code- it should look like this:
+```
+sudo husarnet join hfisoftware@case.edu/5gwS7AwHm7UPrvw8cFrET2
+```
+but maybe be for sma258
