@@ -50,6 +50,6 @@ ERROR: Invalid character '<' looking for beginning of value
 ```
 Try logging in to the dashboard and find the join code- it should look like this:
 ```
-sudo husarnet join hfisoftware@case.edu/5gwS7AwHm7UPrvw8cFrET2
+sudo husarnet join hfisoftware@case.edu/[JOIN CODE HERE]
 ```
 but maybe be for sma258
